@@ -8,5 +8,4 @@
       hashMap[number] = 1;
     }
   }
-  console.dir(hashMap);
 })();
