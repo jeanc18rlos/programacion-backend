@@ -1,0 +1,18 @@
+{
+  "name": "learning-npm",
+  "version": "1.0.0",
+  "description": "this is an example package",
+  "main": "/dist/server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start:dev": "node ./node_modules/nodemon/bin/nodemon.js -e js --exec \" npm run start || exit 1\"",
+    "start": "node index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "dotenv": "^12.0.3",
+    "nodemon": "^2.0.15"
+  }
+}
