@@ -17,8 +17,8 @@ const data = {
   products: "",
 };
 
-(async () => {
-  await productos.forEach((product) => {
+(() => {
+  productos.forEach((product) => {
     prices.push(product.precio);
     data.totalPrice += product.precio;
     if (
@@ -35,7 +35,7 @@ const data = {
     }
     data.products += product.nombre + ",";
   });
-  
+
   data.totalPrice = data.totalPrice.toFixed(2);
   data.medianPrice = (data.totalPrice / prices.length).toFixed(2);
   console.log(data);
